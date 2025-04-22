@@ -20,7 +20,7 @@ function holes_for_xt60_panel(x, y, holePaddingRadius, rectPaddingPerSide) =
 // Set to false to speed up preview render
 render_honeycomb = false;
 
-include <./YAPP_Box/YAPPgenerator_v3.scad>
+include <../YAPP_Box/YAPPgenerator_v3.scad>
 
 pcbLength    = 40;
 pcbWidth     = 76;
@@ -80,8 +80,10 @@ pcbStands = [
     [25, 60, yappHole],
 ];
 
-// Debug
+// Debug & export
 //showPCB = true;
 //showSideBySide = false;
+//printBaseShell = false;
+//printLidShell  = false;
 
 YAPPgenerate();
